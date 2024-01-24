@@ -5,5 +5,20 @@
 } */
 
 body {
-  font-family: "Rubik", sans-serif !important;
+  font-family: 'Rubik', sans-serif !important;
+  overflow: hidden !important;
 }
+
+/* Menu list */
+
+/* .menu_listOpen {
+  opacity: 1;
+  visibility: visible;
+  transition: all 3s;
+  top: 20% !important;
+}
+
+.menu_listClose {
+  opacity: 0;
+  visibility: hidden;
+} */
