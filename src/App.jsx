@@ -1,12 +1,13 @@
-import React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-import Header from './components/Header';
-import { Container } from '@mui/material';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import SectionHero from './components/SectionHero';
+import React from "react";
+import CssBaseline from "@mui/material/CssBaseline";
+import Header from "./components/Header";
+import { Container } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import SectionHero from "./components/SectionHero";
+import Features from "./components/Features";
 
 export default function App() {
-  const mobile = useMediaQuery('(min-width: 600px)');
+  const mobile = useMediaQuery("(min-width: 600px)");
 
   return (
     <>
@@ -14,6 +15,7 @@ export default function App() {
       <Container maxWidth="lg">
         <Header mobile={mobile} />
         <SectionHero />
+        <Features />
       </Container>
     </>
   );

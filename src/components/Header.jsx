@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Box, Typography, List, ListItem } from "@mui/material";
 import Link from "@mui/material/Link";
 import Button from "@mui/material/Button";
-import Logo from "../assets/logo-bookmark.svg";
+import Logo from "./Icon/Logo";
 import IconHamburger from "../assets/icon-hamburger.svg";
 import IconClose from "../assets/icon-close.svg";
 
@@ -51,7 +51,7 @@ export default function Header({ mobile }) {
       }
     >
       <Box>
-        <img src={Logo} alt="Logo" />
+        <Logo isOpen={isOpen} />
       </Box>
       <Box>
         <List
@@ -66,7 +66,7 @@ export default function Header({ mobile }) {
               xs: "absolute",
               sm: "static",
             },
-            top: isOpen ? "30%" : "0",
+            top: isOpen ? "40%" : "0",
             left: "50%",
             transform: {
               xs: "translate(-50%, -50%)",

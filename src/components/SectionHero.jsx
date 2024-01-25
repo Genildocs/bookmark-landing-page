@@ -5,17 +5,25 @@ import Hero from "../assets/illustration-hero.svg";
 
 export default function SectionHero() {
   return (
-    <Grid container gap={4} sx={{ paddingTop: "5rem" }}>
+    <Grid
+      container
+      gap={4}
+      sx={{
+        paddingTop: "5rem",
+        flexDirection: { sm: "row-reverse" },
+        flexWrap: { sm: "nowrap" },
+      }}
+    >
       <Grid item xs={12} md={6} sx={{ position: "relative" }}>
         <Box
           sx={{
-            width: "36rem",
-            height: "12.5rem",
+            width: { xs: "36rem", sm: "50rem" },
+            height: { xs: "12.5rem", sm: "20rem" },
             borderRadius: "16rem",
             backgroundColor: "#5267DF",
             position: "absolute",
-            left: "10%",
-            top: "15%",
+            left: { xs: "10%", sm: "30%" },
+            top: { xs: "15%", sm: "30%" },
             zIndex: -1,
           }}
         ></Box>
@@ -23,7 +31,7 @@ export default function SectionHero() {
           <img src={Hero} alt="Hero" style={{ width: "100%", zIndex: 1 }} />
         </Box>
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={6} className="mb-[9rem]">
         <Box>
           <Typography
             component={"h1"}
@@ -76,10 +84,20 @@ export default function SectionHero() {
           </Typography>
           <Grid container spacing={2} wrap="nowrap">
             <Grid item>
-              <Button variant="contained">Get it on Chrome</Button>
+              <Button
+                variant="contained"
+                className="font-[inherit] bg-soft_blue capitalize py-[10px] px-[17px]"
+              >
+                Get it on Chrome
+              </Button>
             </Grid>
             <Grid item>
-              <Button variant="outlined">Get it on Firefox</Button>
+              <Button
+                variant="outlined"
+                className="font-[inherit] shadow-sh_gray border-none capitalize text-[#242A45] py-[10px] px-[17px]"
+              >
+                Get it on Firefox
+              </Button>
             </Grid>
           </Grid>
         </Box>
