@@ -60,7 +60,7 @@ export default function SectionHero() {
             component={"p"}
             sx={{
               fontSize: {
-                xs: "0.8rem",
+                xs: "0.9rem",
                 sm: "1rem",
               },
               fontFamily: "inherit",
@@ -76,6 +76,7 @@ export default function SectionHero() {
               },
               marginTop: { xs: "1rem" },
               marginBottom: { xs: "1.5rem" },
+              opacity: 0.5,
             }}
           >
             A clean and simple interface to organize your favourite websites.

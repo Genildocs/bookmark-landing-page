@@ -5,6 +5,7 @@ import { Container } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import SectionHero from "./components/SectionHero";
 import Features from "./components/Features";
+import SectionBookmark from "./components/SectionBookmark";
 
 export default function App() {
   const mobile = useMediaQuery("(min-width: 600px)");
@@ -16,6 +17,7 @@ export default function App() {
         <Header mobile={mobile} />
         <SectionHero />
         <Features />
+        <SectionBookmark />
       </Container>
     </>
   );

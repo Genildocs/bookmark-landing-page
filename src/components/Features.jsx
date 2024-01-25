@@ -4,10 +4,20 @@ import { Box, Typography } from "@mui/material";
 export default function Features() {
   return (
     <Box>
-      <Typography variant="body" component={"h2"} textAlign={"center"}>
+      <Typography
+        variant="body"
+        component={"h2"}
+        textAlign={"center"}
+        sx={{ marginBottom: "1rem" }}
+      >
         Features
       </Typography>
-      <Typography variant="body" component={"p"} textAlign={"center"}>
+      <Typography
+        variant="body"
+        component={"p"}
+        textAlign={"center"}
+        sx={{ opacity: 0.5, fontWeight: 400 }}
+      >
         Our aim is to make it quick and easy for you to access your favourite
         websites. Your bookmarks sync between your devices so you can access
         them on the go.
