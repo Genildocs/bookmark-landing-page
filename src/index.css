@@ -4,14 +4,14 @@
 
 @layer base {
   body {
-    font-family: "Rubik", sans-serif !important;
+    font-family: 'Rubik', sans-serif !important;
     overflow-x: hidden !important;
   }
 }
 
 @layer components {
   .bef::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     bottom: 0%;
@@ -25,4 +25,15 @@
   .bef:hover::before {
     width: 40%;
   }
+}
+
+.menu::before {
+  content: '';
+  position: absolute;
+  background-color: #242a45 !important;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
 }
